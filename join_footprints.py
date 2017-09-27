@@ -28,7 +28,7 @@ if __name__ == "__main__":
         hdu2 = fits.open(files[i])
         # sky_area = 2*np.pi*(1-np.cos(np.radians(90-elims[i])))
         # view_area = 2*np.pi*(1-np.cos(np.radians(fovs[i])))
-        fac = (1-np.cos(np.radians(90-elims[i]))) / (1-np.cos(np.radians(fovs[i])))
+        fac = (1-np.cos(np.radians(fovs[i]))) / (1-np.cos(np.radians(90-elims[i])))
         for j, row in enumerate(hdu2[1].data):
             hdu[1].data[j][0] += row[0] * fac
     print('-> sum.fits')
