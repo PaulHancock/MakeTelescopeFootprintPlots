@@ -1,5 +1,6 @@
 # name, lon, lat, el_limit, FoV (deg)
-AAT, 149.06694444, -31.27527778, 20, 0.1 # 
+#AAT, 149.06694444, -31.27527778, 20, 0.1 # 
 MLO, -116.4280, 32.8424, 20, 0.1  # https://en.wikipedia.org/wiki/Mount_Laguna_Observatory Evryscope North
 CTIO, -70.806525, -30.169661, 20, 0.1 # https://en.wikipedia.org/wiki/Cerro_Tololo_Inter-American_Observatory Evryscope South
-MWA, 116.671, -26.7033, 20, 0.1 # 
+MWA, 116.671, -26.7033, 20, 0.1 #
+SALT, 20.810678, -32.376006, 20, 0.1 #  https://en.wikipedia.org/wiki/Southern_African_Large_Telescope
