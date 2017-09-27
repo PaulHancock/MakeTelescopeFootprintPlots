@@ -9,7 +9,7 @@ shadedrelief.jpg:
 earth.fits: shadedrelief.jpg
 	python EarthHPX.py
 
-fits: AAT.fits MLO.fits CTIO.fits MWA.fits SALT.fits
+fits: MLO.fits CTIO.fits MWA.fits SALT.fits
 
 %.fits: telescopes.dat
-	grep $(firstword $(subst ., ,$@)) telescopes.dat | tr "," ' ' | awk '{print "MIMAS --fitsimage -o "$$1".fits +c "$$2" "$$3" " 90-$$4}' | bash
+	grep "^$(firstword $(subst ., ,$@))" telescopes.dat | tr "," ' ' | awk '{print "MIMAS --fitsimage -o "$$1".fits +c "$$2" "$$3" " 90-$$4}' | bash
