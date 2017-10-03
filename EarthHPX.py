@@ -11,6 +11,8 @@ __date__ = ''
 if __name__ == '__main__':
     grayscale_pil_image = Image.open("shadedrelief.jpg").convert("L")
     image_array = pil_to_array(grayscale_pil_image)
+    # reverse the longitude direction so that astro image veiwers plot things the right way around
+    image_array = np.fliplr(image_array)
     theta = np.linspace(0, np.pi, num=image_array.shape[0])[:, None]
     phi = np.linspace(-np.pi, np.pi, num=image_array.shape[1])
 

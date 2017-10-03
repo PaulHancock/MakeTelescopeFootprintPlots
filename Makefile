@@ -6,10 +6,10 @@ shadedrelief.jpg:
 	wget https://github.com/matplotlib/basemap/raw/master/lib/mpl_toolkits/basemap/data/shadedrelief.jpg
 
 
-earth.fits: shadedrelief.jpg
+earth.fits: shadedrelief.jpg EarthHPX.py
 	python EarthHPX.py
 
 fits: MLO.fits CTIO.fits MWA.fits SALT.fits
 
 %.fits: telescopes.dat
-	grep "^$(firstword $(subst ., ,$@))" telescopes.dat | tr "," ' ' | awk '{print "MIMAS --fitsimage -o "$$1".fits +c "$$2" "$$3" " 90-$$4}' | bash
+	grep "^$(firstword $(subst ., ,$@))" telescopes.dat | tr "," ' ' | awk '{print "MIMAS --fitsimage -o "$$1".fits +c "360-$$2" "$$3" " 90-$$4}' | bash
