@@ -1,12 +1,12 @@
 # name, lon, lat, el_limit, FoV radius (deg)
 #
 # telescopes that may accidently discover a transient
-AAT, 149.06694444, -31.27527778, 20, 0.1 #
-CTIO, -70.806525, -30.169661, 20, 3.6 # 13 telescopes
-BO, 26.404722, -29.038831, 20, 2.4 # 6 telescopes at https://en.wikipedia.org/wiki/Boyden_Observatory
+#AAT, 149.06694444, -31.27527778, 20, 0.1 #
+#CTIO, -70.806525, -30.169661, 20, 3.6 # 13 telescopes
+#BO, 26.404722, -29.038831, 20, 2.4 # 6 telescopes at https://en.wikipedia.org/wiki/Boyden_Observatory
 #
 # telescopes that are monitoring for transients
-ESN, -116.4280, 32.8424, 20, 90  # https://en.wikipedia.org/wiki/Mount_Laguna_Observatory Evryscope North
+#ESN, -116.4280, 32.8424, 20, 90  # https://en.wikipedia.org/wiki/Mount_Laguna_Observatory Evryscope North
 ESS, -70.806525, -30.169661, 20, 70 # https://en.wikipedia.org/wiki/Cerro_Tololo_Inter-American_Observatory Evryscope South
 #
 # proposed locations of our new astrocam telescopes
